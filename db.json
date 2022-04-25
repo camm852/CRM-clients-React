@@ -1,0 +1,20 @@
+{
+  "clients": [
+    {
+      "name": "Carlos Marin",
+      "business": "Carlos",
+      "email": "camm123@gmail.com",
+      "phone": "3116918585",
+      "notes": "Cliente",
+      "id": 2
+    },
+    {
+      "name": "Meliza",
+      "business": "cardiologia",
+      "email": "meliza@gmail.com",
+      "phone": "3112568909",
+      "notes": "Mi novia",
+      "id": 3
+    }
+  ]
+}
