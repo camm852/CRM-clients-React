@@ -14,7 +14,7 @@ export default function ViewClient() {
       const { id } = params;
       try {
         setTimeout(async () => {
-          const response = await fetch(`http://localhost:4000/clients/${id}`);
+          const response = await fetch(`${import.meta.env.VITE_API_URL}/${id}`);
           if (response.status !== 200) {
             setCharge(false);
             return;

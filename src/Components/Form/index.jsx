@@ -14,7 +14,7 @@ export default function FormClient({ client }) {
       let data;
       if (client.id) {
         //put clients
-        const url = `http://localhost:4000/clients/${client.id}`;
+        const url = `${import.meta.env.VITE_API_URL}/${client.id}`;
         response = await fetch(url, {
           method: "PUT",
           body: JSON.stringify(values),
@@ -24,7 +24,7 @@ export default function FormClient({ client }) {
         });
       } else {
         //post clients
-        const url = "http://localhost:4000/clients";
+        const url = import.meta.env.VITE_API_URL;
         response = await fetch(url, {
           method: "POST",
           body: JSON.stringify(values),

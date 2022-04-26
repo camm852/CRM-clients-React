@@ -8,7 +8,7 @@ export default function Clients() {
     //get all clients
     const getClientsAPI = async () => {
       try {
-        const url = "http://localhost:4000/clients";
+        const url = import.meta.env.VITE_API_URL;
         const response = await fetch(url);
         const data = await response.json();
         setClients(data);
@@ -23,7 +23,7 @@ export default function Clients() {
     const confirmDelete = confirm("Are u sure delete this client?");
     if (confirmDelete) {
       try {
-        const url = `http://localhost:4000/clients/${id}`;
+        const url = `${import.meta.env.VITE_API_URL}/${id}`;
         const response = await fetch(url, {
           method: "DELETE",
         });
