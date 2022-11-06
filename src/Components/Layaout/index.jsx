@@ -15,23 +15,23 @@ export default function Layaout() {
           <nav className="mt-10">
             <div
               className={`${
-                currentUrl !== "/clients"
+                currentUrl !== "/"
                   ? "text-white hover:bg-white hover:text-blue-900"
                   : "bg-white text-blue-900"
               }  text-white w-1/2 rounded-xl p-2 mb-5 cursor-pointer`}
             >
-              <Link className={`text-2xl font-bold block`} to="/clients">
+              <Link className={`text-2xl font-bold block`} to="/">
                 Clients
               </Link>
             </div>
             <div
               className={`${
-                currentUrl !== "/clients/new"
+                currentUrl !== "/new"
                   ? "text-white hover:bg-white hover:text-blue-900"
                   : "bg-white text-blue-900"
               }  text-white w-1/2 rounded-xl p-2 mb-5 cursor-pointer`}
             >
-              <Link className={`text-2xl font-bold block`} to="/clients/new">
+              <Link className={`text-2xl font-bold block`} to="/new">
                 New Client
               </Link>
             </div>

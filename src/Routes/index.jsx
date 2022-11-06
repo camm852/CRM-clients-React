@@ -10,7 +10,7 @@ export default function RoutesApp() {
   return (
     <Router>
       <Routes>
-        <Route path="/clients" element={<Layaout />}>
+        <Route path="/" element={<Layaout />}>
           <Route index element={<Clients />} />
           <Route path="new" element={<NewClient />} />
           <Route path="edit/:id" element={<EditClient />} />

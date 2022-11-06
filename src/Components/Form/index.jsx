@@ -34,7 +34,7 @@ export default function FormClient({ client }) {
         });
       }
       await response.json();
-      navigate("/clients");
+      navigate("/");
     } catch (error) {
       console.log(error);
     }
@@ -76,7 +76,7 @@ export default function FormClient({ client }) {
           onSubmit={async (values, { resetForm }) => {
             await handleSubmit(values);
             resetForm();
-            navigate("/clients");
+            navigate("/");
           }}
         >
           {/* Touched es para cuando el usuario selecciona un input y luego lo desselecciona */}

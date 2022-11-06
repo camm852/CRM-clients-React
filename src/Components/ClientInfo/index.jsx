@@ -24,7 +24,7 @@ export default function Client({ client, handleDelete }) {
           type="button"
           className="mt-3 bg-blue-600 hover:bg-blue-700 block w-full text-white p-2 uppercase font-bold text-xs rounded-md"
           onClick={() => {
-            navigate(`/clients/${id}`);
+            navigate(`/${id}`);
           }}
         >
           View
@@ -33,7 +33,7 @@ export default function Client({ client, handleDelete }) {
           type="button"
           className="mt-3 bg-green-600 hover:bg-green-700 block w-full text-white p-2 uppercase font-bold text-xs rounded-md"
           onClick={() => {
-            navigate(`/clients/edit/${id}`);
+            navigate(`/edit/${id}`);
           }}
         >
           Edit

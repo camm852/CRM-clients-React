@@ -43,7 +43,7 @@ export default function EditClient() {
       <button
         className="bg-blue-900 p-3 mt-10 text-white rounded-md font-bold"
         onClick={() => {
-          navigate("/clients");
+          navigate("/");
         }}
       >
         Go Back
